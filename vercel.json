@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "voltz.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "voltz.py"
+    }
+  ]
+}
